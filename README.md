@@ -23,17 +23,13 @@ docker ps -a
 
 Para instalar imagens já criadas e rodar, você pode utilizar o comando abaixo.
 Nesse exemplo ele instala a imagem do ubuntu e roda automaticamente no seu terminal
+Confira todas as imagens no <a href="https://hub.docker.com/">https://hub.docker.com/</a>
 
 `Modo interativo: Quando fechar o terminal, ele desistala o serviço`
-
-`Confira todas as imagens no <a href="https://hub.docker.com/">https://hub.docker.com/</a>`
 
 ```bash
 docker run -it ubuntu # Com o -it, roda de modo interativo.
 ```
-
-
-
 
 ## Projeto 1
 
