@@ -184,12 +184,12 @@ Para rodar o Dockerfile
 docker build -t projeto2 .
 ```
 
-Para rodar: *ATENÇÃO, DEPOIS DE CRIADO, VOCÊ PODE USAR O DOCKER START PARA RODAR CONTAINER JÁ CRIADOS AO INVES DE CRIAR NOVOS*
+Para rodar: *ATENÇÃO, DEPOIS DE CRIADO, VOCÊ PODE USAR O `DOCKER START` PARA RODAR CONTAINER JÁ CRIADOS AO INVÉS DE CRIAR NOVOS*
 ```bash
 docker run -p 3000:3000  projeto2  #-p para liberar a porta 3000
 ```
 
-Caso queira rodar em backgroud use:
+Caso queira rodar em backgroud use (Deixa o terminal livre para uso):
 ```bash
 docker run -dp 3000:3000  projeto2  #-d rodar em backgroud
 ```
