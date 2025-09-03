@@ -4,40 +4,29 @@ Veja os conteúdos abaixo.
 
 ---
 
-## Informações
+## Imagens no Docker
 
-Para verificar todos os containers rodando na sua máquina.
+São com base no Dockerfile que você cria a imagem, no momento que você executa, vira um container
 
-```bash
-docker ps
-```
-
-
-Para verificar todos os containers criados na sua máquina.
-
-```bash
-docker ps -a
-```
-
-Para adicionar TAG na criação da sua imagem
+### Para adicionar TAG na criação da sua imagem
 
 ```bash
 docker build -t meu-usuario/minha-build:1.0.0 .
 ```
 
-Para conferir as imagens com suas tags
+### Para conferir as imagens com suas tags
 
 ```bash
 docker images
 ```
 
-Para remover alguma imagem 
+### Para remover alguma imagem 
 
 ```bash
 docker image rm {nome ou image id}
 ```
 
-Para zipar e salvar imagem para passar pra outro computador
+### Para zipar e salvar imagem para passar pra outro computador
 
 ```bash
 docker image save -o nome.tar {nome ou image id}
@@ -50,6 +39,8 @@ docker image load -i nome.tar
 ```
 
 ---
+
+### Instalar imagem do DockerHub
 
 Para instalar imagens já criadas e rodar, você pode utilizar o comando abaixo.
 Nesse exemplo ele instala a imagem do ubuntu e roda automaticamente no seu terminal
@@ -64,6 +55,18 @@ docker run -it ubuntu # Com o -it, roda de modo interativo.
 ---
 
 ## Containers no Docker
+
+Para verificar todos os containers rodando na sua máquina.
+
+```bash
+docker ps
+```
+
+Para verificar todos os containers criados na sua máquina.
+
+```bash
+docker ps -a
+```
 
 ### Parar e iniciar containers
 Use o comando abaixo para ver todos os containers ativos:
@@ -116,7 +119,7 @@ docker start meu-nginx
 Na hora de criar o container, basta:
 
 ```bash
-docker run -d --name meu-container imagemusada
+docker run -d --name meu-container imagemUsada
 ```
 
 
@@ -148,10 +151,17 @@ docker exec meu-nginx ls -a # Comandos linux como pwd e etc...
 
 ### Deletar um container
 
+Basta usar o comando abaixo:
+
 ```bash
 docker rm meu-nginx # nome do container 
 ```
 
+Para forçar a remoção, é necessário usar o parâmetro -f
+
+```bash
+docker rm -f meu-nginx # nome do container 
+```
 
 
 ---
