@@ -54,4 +54,4 @@ Após criar a imagem, podemos rodar ela com:
 docker run nomedabuild
 ```
 
-Com isso rodamos um projeto Node sem a necessidade de instalar manualmente, apenas com os requisitos da imagem.
+Com isso rodamos um projeto sem a necessidade de instalar manualmente suas tecnologias, apenas com os requisitos da imagem (Dockerfile).
