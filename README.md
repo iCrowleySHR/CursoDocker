@@ -25,6 +25,12 @@ Para adicionar TAG na criação da sua imagem
 docker build -t meu-usuario/minha-build:1.0.0 .
 ```
 
+Para conferir as imagens com suas tags
+
+```bash
+docker images
+```
+
 ---
 
 
