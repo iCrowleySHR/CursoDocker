@@ -41,7 +41,7 @@ Após você configurar o **Dockerfile** da sua aplicação, você deve criar a i
 Isso fará com que crie o ambiente pra rodar a sua aplicação
 
 ```bash
-docker build -t nomedabuild
+docker build -t nomedabuild .
 ```
 
 ---
