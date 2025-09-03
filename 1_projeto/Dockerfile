@@ -1,4 +1,4 @@
-# Instala o node na versão alpine
+# Instala Alpine preparado com o Node.js
 FROM node:alpine
 
 # Cria o diretório /app e copia o conteúdo do projeto para dentro dele
