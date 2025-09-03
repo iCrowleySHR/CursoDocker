@@ -49,9 +49,23 @@ Para carregar imagem em outro máquina
 docker image load -i nome.tar 
 ```
 
-# 🛑 Parando Containers no Docker
+---
 
-## 1) Listar containers em execução
+Para instalar imagens já criadas e rodar, você pode utilizar o comando abaixo.
+Nesse exemplo ele instala a imagem do ubuntu e roda automaticamente no seu terminal
+Confira todas as imagens no <a href="https://hub.docker.com/">https://hub.docker.com/</a>
+
+`Modo interativo: Quando fechar o terminal, ele desistala o serviço`
+
+```bash
+docker run -it ubuntu # Com o -it, roda de modo interativo.
+```
+
+---
+
+## Parando Containers no Docker
+
+### Listar containers em execução
 Use o comando abaixo para ver todos os containers ativos:
 ```bash
 docker ps
@@ -73,18 +87,6 @@ docker stop abc123def456
 ```
 
 ---
-
-
-
-Para instalar imagens já criadas e rodar, você pode utilizar o comando abaixo.
-Nesse exemplo ele instala a imagem do ubuntu e roda automaticamente no seu terminal
-Confira todas as imagens no <a href="https://hub.docker.com/">https://hub.docker.com/</a>
-
-`Modo interativo: Quando fechar o terminal, ele desistala o serviço`
-
-```bash
-docker run -it ubuntu # Com o -it, roda de modo interativo.
-```
 
 ## Projeto 1
 
