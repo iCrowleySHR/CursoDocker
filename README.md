@@ -125,7 +125,7 @@ docker run -d --name meu-container imagemUsada
 Com a informação do `docker ps -a`, você pode usar o:
 
 ```bash
-docker logs -f id ou nomeDaImagem
+docker logs -f id ou nomeDoContainer
 ```
 
 Exemplo de saída:
@@ -146,6 +146,13 @@ Para isso você deve:
 ```bash
 docker exec meu-nginx ls -a # Comandos linux como pwd e etc...
 ```
+
+ou para abrir o shell do seu container:
+
+```bash
+docker exec -it nomeDoContainer sh
+```
+
 
 ### Deletar um container
 
