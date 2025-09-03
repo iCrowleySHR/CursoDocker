@@ -63,7 +63,7 @@ docker run -it ubuntu # Com o -it, roda de modo interativo.
 
 ---
 
-## Parando Containers no Docker
+## Containers no Docker
 
 ### Listar containers em execução
 Use o comando abaixo para ver todos os containers ativos:
@@ -78,13 +78,40 @@ CONTAINER ID   IMAGE           COMMAND         STATUS         NAMES
 abc123def456   nginx:latest    "nginx -g ..."  Up 5 minutes   meu-nginx
 ```
 
+Pode usar:
+
 ```bash
 docker stop meu-nginx
 ```
 
+ou
+
 ```bash
 docker stop abc123def456
 ```
+
+### Para rodar containers já criados
+
+Para rodar container já criados você deve usar o:
+
+```bash
+docker ps -a
+```
+
+Exemplo de saída:
+```bash
+Copiar código
+CONTAINER ID   IMAGE           COMMAND         STATUS                        NAMES
+abc123def456   nginx:latest    "nginx -g ..."  Exited (255) 29 minutes ago   meu-nginx
+```
+
+E para iniciar:
+
+```bash
+docker start meu-nginx
+```
+
+
 
 ---
 
