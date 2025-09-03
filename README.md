@@ -49,6 +49,28 @@ Para carregar imagem em outro máquina
 docker image load -i nome.tar 
 ```
 
+# 🛑 Parando Containers no Docker
+
+## 1) Listar containers em execução
+Use o comando abaixo para ver todos os containers ativos:
+```bash
+docker ps
+```
+
+Exemplo de saída:
+```bash
+Copiar código
+CONTAINER ID   IMAGE           COMMAND         STATUS         NAMES
+abc123def456   nginx:latest    "nginx -g ..."  Up 5 minutes   meu-nginx
+```
+
+```bash
+docker stop meu-nginx
+```
+
+```bash
+docker stop abc123def456
+```
 
 ---
 
