@@ -37,10 +37,16 @@ Para remover alguma imagem
 docker image rm {nome ou image id}
 ```
 
-Para zipar imagem para passar pra outro computador
+Para zipar e salvar imagem para passar pra outro computador
 
 ```bash
 docker image save -o nome.tar {nome ou image id}
+```
+
+Para carregar imagem em outro máquina
+
+```bash
+docker image load -i nome.tar 
 ```
 
 
