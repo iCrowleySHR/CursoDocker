@@ -13,7 +13,7 @@ docker ps
 ```
 
 
-Para verificar todos os containers criadosna sua máquina.
+Para verificar todos os containers criados na sua máquina.
 
 ```bash
 docker ps -a
