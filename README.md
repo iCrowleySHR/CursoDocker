@@ -19,7 +19,15 @@ Para verificar todos os containers criados na sua máquina.
 docker ps -a
 ```
 
+Para adicionar TAG na criação da sua imagem
+
+```bash
+docker build -t meu-usuario/minha-build:1.0.0 .
+```
+
 ---
+
+
 
 Para instalar imagens já criadas e rodar, você pode utilizar o comando abaixo.
 Nesse exemplo ele instala a imagem do ubuntu e roda automaticamente no seu terminal
