@@ -38,8 +38,6 @@ Para carregar imagem em outro máquina
 docker image load -i nome.tar 
 ```
 
----
-
 ### Instalar imagem do DockerHub
 
 Para instalar imagens já criadas e rodar, você pode utilizar o comando abaixo.
@@ -179,7 +177,6 @@ Isso fará com que crie o ambiente pra rodar a sua aplicação
 docker build -t nomedabuild .
 ```
 
----
 
 ### Rodar o projeto e o container
 
@@ -191,11 +188,12 @@ docker run nomedabuild
 
 Com isso rodamos um projeto Node sem a necessidade de instalar manualmente, apenas com os requisitos da imagem.
 
+---
+
 ## Projeto 2
 
 Iremos criar o Dockerfile com toda a configuração para rodar a aplicação Node
 
----
 
 Quando criamos o container, rodamos uma mini máquina virtual que roda aquele ambiente que criamos.
 Podemos acessar o shell com o comando abaixo quando rodarmos a imagem
@@ -206,7 +204,6 @@ Podemos acessar o shell com o comando abaixo quando rodarmos a imagem
 docker run -it nomedabuild sh # Com o -it, roda de modo interativo.
 ```
 
----
 
 Para rodar o Dockerfile
 
