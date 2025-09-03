@@ -65,7 +65,7 @@ docker run -it ubuntu # Com o -it, roda de modo interativo.
 
 ## Containers no Docker
 
-### Listar containers em execução
+### Parar e iniciar containers
 Use o comando abaixo para ver todos os containers ativos:
 ```bash
 docker ps
