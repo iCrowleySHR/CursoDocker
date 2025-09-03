@@ -133,6 +133,18 @@ Using sqlite database at /etc/todos/todo.db
 Listening on port 3000
 ```
 
+### Para rodar comando de terminal dentro do container
+
+```bash
+Copiar código
+CONTAINER ID   IMAGE           COMMAND         STATUS                        NAMES
+abc123def456   nginx:latest    "nginx -g ..."  Exited (255) 29 minutes ago   meu-nginx
+```
+
+Para isso você deve:
+```bash
+docker exec meu-nginx ls -a # Comandos linux como pwd e etc...
+```
 
 ---
 
