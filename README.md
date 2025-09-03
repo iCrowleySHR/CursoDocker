@@ -111,6 +111,27 @@ E para iniciar:
 docker start meu-nginx
 ```
 
+### Para nomear containers
+
+Na hora de criar o container, basta:
+
+```bash
+docker run -d --name meu-container imagemusada
+```
+
+
+### Para visualizar os logs
+Com a informação do `docker ps -a`, você pode usar o:
+
+```bash
+docker logs -f id ou nomeDaImagem
+```
+
+Exemplo de saída:
+```bash
+Using sqlite database at /etc/todos/todo.db
+Listening on port 3000
+```
 
 
 ---
@@ -163,7 +184,7 @@ Para rodar o Dockerfile
 docker build -t projeto2 .
 ```
 
-
+Para rodar: *ATENÇÃO, DEPOIS DE CRIADO, VOCÊ PODE USAR O DOCKER START PARA RODAR CONTAINER JÁ CRIADOS AO INVES DE CRIAR NOVOS*
 ```bash
 docker run -p 3000:3000  projeto2  #-p para liberar a porta 3000
 ```
