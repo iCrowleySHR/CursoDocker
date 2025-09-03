@@ -146,6 +146,14 @@ Para isso você deve:
 docker exec meu-nginx ls -a # Comandos linux como pwd e etc...
 ```
 
+### Deletar um container
+
+```bash
+docker rm meu-nginx # nome do container 
+```
+
+
+
 ---
 
 ## Projeto 1
