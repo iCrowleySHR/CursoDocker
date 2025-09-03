@@ -31,6 +31,19 @@ Para conferir as imagens com suas tags
 docker images
 ```
 
+Para remover alguma imagem 
+
+```bash
+docker image rm {nome ou image id}
+```
+
+Para zipar imagem para passar pra outro computador
+
+```bash
+docker image save -o nome.tar {nome ou image id}
+```
+
+
 ---
 
 
