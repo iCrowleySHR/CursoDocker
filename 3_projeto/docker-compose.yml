@@ -1,29 +1,29 @@
-version: "3.8"
+version: "3.8"   # Versão da especificação do Docker Compose usada
 
-services:
-  frontend:
+services:        # Aqui definimos os serviços (containers) da aplicação
+  frontend:      # Serviço do frontend (provavelmente React ou outra SPA)
     depends_on: 
-      - backend
-    build: ./frontend
+      - backend  # O frontend só sobe depois que o backend estiver disponível
+    build: ./frontend   # O Dockerfile está localizado na pasta ./frontend
     ports:
-      - 3000:3000
+      - 3000:3000       # Mapeia a porta 3000 do container para a 3000 do host
 
-  backend: 
+  backend:       # Serviço do backend (provavelmente Node.js/Express)
     depends_on: 
-      - db
-    build: ./backend
+      - db       # O backend só sobe depois que o banco estiver rodando
+    build: ./backend   # O Dockerfile está localizado na pasta ./backend
     ports: 
-      - 3001:3001
+      - 3001:3001       # Mapeia a porta 3001 do container para a 3001 do host
     environment: 
-      DB_URL: mongodb://db/vidly
-    command: ./docker-entrypoint.sh
+      DB_URL: mongodb://db/vidly   # Variável de ambiente com a URL do banco
+    command: ./docker-entrypoint.sh   # Script de inicialização customizado
 
-  db:
-    image: mongo:4.0-xenial
+  db:            # Serviço do banco de dados MongoDB
+    image: mongo:4.0-xenial   # Usa a imagem oficial do Mongo, versão 4.0
     ports:
-      - 27017:27017
+      - 27017:27017           # Mapeia a porta do MongoDB
     volumes:
-      - vidly:/data/db
+      - vidly:/data/db        # Usa um volume para persistir os dados
 
-volumes:
-  vidly:
+volumes:          # Declaração dos volumes nomeados
+  vidly:          # Volume chamado "vidly" para persistência do MongoDB
