@@ -227,3 +227,7 @@ Caso queira rodar em backgroud use (Deixa o terminal livre para uso):
 ```bash
 docker run -dp 3000:3000  projeto2  #-d rodar em backgroud
 ```
+
+## Projeto 3
+
+Projeto onde temos frontend e backend, e será utilizado o `Docker-Composer` para manipular diversas imagens em um único arquivo.
