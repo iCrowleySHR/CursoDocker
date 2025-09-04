@@ -243,3 +243,39 @@ Para subir basta usar o comando no diretório:
 ```bash
 docker-compose up
 ```
+
+### Listar containers em execução
+```bash
+docker compose ps
+```
+
+### Subir containers
+```bash
+docker compose up -d
+```
+> O parâmetro `-d` executa em segundo plano (*detached mode*).
+
+### Parar e remover containers
+```bash
+docker compose down
+```
+
+### Apagar containers + volumes + imagens
+```bash
+docker compose down --volumes --rmi all
+```
+
+## Parar containers sem remover
+```bash
+docker compose stop
+```
+
+## Iniciar containers parados
+```bash
+docker compose start
+```
+
+---
+
+
+
