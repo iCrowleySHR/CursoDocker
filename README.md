@@ -88,3 +88,19 @@ Caso queira rodar em backgroud use:
 ```bash
 docker run -dp 3000:3000  projeto2  #-d rodar em backgroud
 ```
+
+## Projeto 3 - Docker Compose
+
+Nesse projeto aprenderemos como utilizar o `Docker Compose`, que é um arquivo docker que orquestra várias imagens e containers.
+O arquivo conta com front-end, back-end e MongoDB, já configurado
+
+* Dentro da pasta front-end conta com um Dockerfile que configura a parte do frontend
+* Dentro da pasta back-end conta com um Dockerfile que configura a parte do backend
+* Já o banco de dados está sendo configurado pelo docker-compose.yml
+
+Isso faz com que configure e imagens e containers de uma vez só!
+
+Para subir basta usar o comando no diretório:
+```bash
+docker-compose up
+```
